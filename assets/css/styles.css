@@ -75,6 +75,15 @@ body {
 /*===INDEX===*/
 .welcome-box {
     padding-left: 50px;
+    padding-right: 25px;
+}
+
+.welcome-title {
+    font-size: 3.4rem;
+}
+
+.welcome-text {
+    text-align: justify;
 }
 
 .welcome-img {
@@ -113,7 +122,7 @@ body {
     text-align: center;
     margin: 30px auto 50px;
     padding: 20px;
-    font-size: 45px;
+    font-size: 3rem;
     line-height: 60px;
     color: #555;
 }
@@ -121,7 +130,7 @@ body {
 .see-products-subtitle {
     color: #555;
     pointer-events: none;
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 
 .see-products-txt {
@@ -194,7 +203,7 @@ body {
 }
 
 .nombre-beneficio {
-    font-size: 23px;
+    font-size: 2rem;
     padding: 10px;
     margin: 10px;
 }
@@ -207,11 +216,11 @@ body {
 .beneficio-txt {
     margin: 10px;
     padding: 10px;
-    font-size: 13px;
+    font-size: 1rem;
     font-weight: 600;
 }
 /*===MEDIA QUERIES===*/
-@media screen and (max-width: 1030px) {
+@media screen and (max-width: 1130px) {
     .beneficios-container {
         display: flex;
         flex-direction: column;
@@ -250,14 +259,14 @@ body {
 .newsletter-title {
     color: #000000;
     text-align: center;
-    font-size: 40px;
+    font-size: 2.5rem;
     margin: 10px 0;
     font-weight: 900;
 }
 
 .newsletter-txt {
     color: #ffffff;
-    font-size: 16px;
+    font-size: 1rem;
     margin: 10px 0;
     text-align: center;
     margin: 10px 0;
@@ -425,6 +434,7 @@ body {
     color: #AF90E9;
     transition: .8s;
 }
+
 /*===NOSOTROS===*/
 .sobre-nosotros {
     margin: auto;
