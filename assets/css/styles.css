@@ -135,7 +135,7 @@ body {
 
 .see-products-txt {
     padding: 10px;
-    font-size: 15px;
+    font-size: 1rem;
     font-weight: 300;
 }
 
@@ -298,6 +298,7 @@ body {
 
 .newsletter-input input::placeholder {
     color:rgba(255, 255, 255, 0.5);
+    font-size: 0.8rem;
 }
 
 .btnNewsletter {
@@ -438,14 +439,14 @@ body {
 /*===NOSOTROS===*/
 .sobre-nosotros {
     margin: auto;
-    padding-top: 50px;
+    padding-top: 40px;
 }
 
 .nosotros-titulo {
     text-align: center;
-    margin: 0 auto 30px;
+    margin: 10px auto;
     padding: 10px;
-    font-size: 45px;
+    font-size: 2.5rem;
     font-weight: 900;
     position: relative;
     line-height: 60px;
@@ -453,6 +454,7 @@ body {
 }
 
 .nosotros-text {
+    font-size: 1rem;
     text-align: justify;
 }
 
@@ -474,13 +476,13 @@ body {
 .logro-tres { grid-area: logro-tres; }
 
 .nosotros-logros h2 {
-    font-size: 50px;
+    font-size: 3.5rem;
     font-weight: bolder;
     color: #231942;
 }
 
 .nosotros-logros h4 {
-    font-size: 10px;
+    font-size: 0.8rem;
     font-weight: bold;
     color: #574b90;
 }
@@ -494,7 +496,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-    font-size: 20px;
+    font-size: 1.5rem;
 }
 
 .widget:hover {
@@ -515,11 +517,10 @@ body {
 
 .nosotros-vacantes {
 	background: #231942;
-    padding: 20px;
 	color: #FFFFFF;
 	grid-area: nosotros-vacantes;
     text-align: center;
-    margin-bottom: 10px;
+    width: 100%;
 }
 
 .nosotros-vacantes h4 {
@@ -555,7 +556,6 @@ body {
         color: #574b90;
     }
 }
-
 
 /*===PRODUCTOS===*/
 .prod-img {

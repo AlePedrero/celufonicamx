@@ -13,7 +13,7 @@
 <body>
     <nav class="navbar navbar-expand-lg header">
         <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html"><img class="header-img" src="../assets/img/logonobg.png"></a>
+            <a class="navbar-brand" href="../index.html"><img class="header-img" src="../assets/img/logonobg.png" alt="Logo Celufonica"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -40,58 +40,94 @@
             </div>
         </div>
     </nav>
-        <div class="container fluid mt-5 px-0 nosotros">
-            <div class="row mt-5 px-0 sobre-nosotros">
-                <div class="col-md-5 nosotros-img1">
-                    <img src="../assets/img/nosotrosdos.jpg" alt="Nuestro equipo de trabajo" class="img-fluid nosotros-img">
+    <div class="container fluid mt-1 px-0 nosotros">
+        <div class="row px-0 sobre-nosotros d-flex justify-content-center align-items-center align-content-center">
+            <div class="col-lg-6 nosotros-slider">
+                <div id="nosotros-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="2000">
+                            <img src="../assets/img/nosotrosuno.jpg" class="d-block w-100" alt="Nuestro equipo de trabajo">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="../assets/img/nosotrosdos.jpg" class="d-block w-100" alt="Nuestro equipo de trabajo">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="../assets/img/nosotrostres.jpg" class="d-block w-100" alt="Nuestro equipo de trabajo">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#nosotros-carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#nosotros-carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <div class="col-md-7 nosotros-historia">
-                    <h2 class="nosotros-titulo">Nuestra Historia</h2>
-                    <p class="nosotros-text">Nosotros somos Celufónica, una start-up mexicana enfocada a servicios de operador de telefonía y proveedor de internet. Comenzó como una idea entre un grupo de amigos, a finales de 2019. Al haber comenzado el proyecto recién empezada la pandemia, nos llevó a realizar todo nuestro trabajo de manera remota, lo que hizo más eficiente nuestro trabajo y nos llevó a desarrollarlo más rápido para salir al mercado con un MVP muy sencillo: brindando el servicio de Telefonía Celular. Después, fuimos expandiéndo la empresa a llevar a cabo otros servicios, como lo son el servicio de Internet Fijo y el servicio de Internet Portátil. Estamos comprometidos con nuestros usuarios y sabemos que lo que necesitan es un servicio de calidad, a un bajo costo para que todos tengan acceso a Internet, en estos tiempos es muy importante y valioso contar con un proveedor que sea confiable y sobre todo, que se preocupe por las necesidades de nuestros usuarios, para que tengan la mejor experiencia posible al ser un cliente de Celufónica. Estamos muy orgullosos de presentar los siguientes logros obtenidos en tan sólo 18 meses de trabajo:</p>
-                    <div class="nosotros-logros">
-                        <div class="logro-uno">
-                            <h2>+500k</h2>
-                            <h4>Usuarios activos en el primer año.</h4>
-                        </div>
-                        <div class="logro-dos">
-                            <h2>+30</h2>
-                            <h4>Estados de la república con cobertura nativa.</h4>
-                        </div>
-                        <div class="logro-tres">
-                            <h2>+19</h2>
-                            <h4>Convenios con empresas trasnacionales.</h4>
-                        </div>
+            </div>
+            <div class="col-lg-6 nosotros-historia">
+                <h1 class="nosotros-titulo">Nuestra Historia</h1>
+                <p class="nosotros-text">Nosotros somos Celufónica, una start-up mexicana enfocada a servicios de operador de telefonía y proveedor de internet. Comenzó como una idea entre un grupo de amigos, a finales de 2019. Al haber comenzado el proyecto recién empezada la pandemia, nos llevó a realizar todo nuestro trabajo de manera remota, lo que hizo más eficiente nuestro trabajo y nos llevó a desarrollarlo más rápido para salir al mercado con un MVP muy sencillo: brindando el servicio de Telefonía Celular. Después, fuimos expandiéndo la empresa a llevar a cabo otros servicios, como lo son el servicio de Internet Fijo y el servicio de Internet Portátil. Estamos comprometidos con nuestros usuarios y sabemos que lo que necesitan es un servicio de calidad, a un bajo costo para que todos tengan acceso a Internet, en estos tiempos es muy importante y valioso contar con un proveedor que sea confiable y sobre todo, que se preocupe por las necesidades de nuestros usuarios, para que tengan la mejor experiencia posible al ser un cliente de Celufónica. Estamos muy orgullosos de presentar los siguientes logros obtenidos en tan sólo 18 meses de trabajo:</p>
+                <div class="nosotros-logros">
+                    <div class="logro-uno">
+                        <h2>+500k</h2>
+                        <h4>Usuarios activos en el primer año.</h4>
+                    </div>
+                    <div class="logro-dos">
+                        <h2>+30</h2>
+                        <h4>Estados de la república con cobertura nativa.</h4>
+                    </div>
+                    <div class="logro-tres">
+                        <h2>+19</h2>
+                        <h4>Convenios con empresas trasnacionales.</h4>
                     </div>
                 </div>
             </div>
-            <hr class="nosotros-divider">
-            <div class="row sobre-nosotros">
-                <div class="col-md-7 order-md-1 nosotros-mision">
-                    <h1 class="nosotros-titulo">Nuestro Futuro</h1>
-                    <p class="nosotros-text">Lo que comenzó con una pequeña oficina en Ciudad de México, ahora soñamos con que se expanda a más lugares de la República Mexicana. Si bien ya contamos con diversos puntos de ventaen algunos estados de la república gracias a nuestros distribuidores, queremos que nuestras operaciones se expandan a los demás estados para tener un mayor alcance a más usuarios que aún no han podido probar nuestro servicio y no se pierdan de la experiencia Celufónica. Nos complace anunciar que recién a inicios del 2022 abrimos nuestro departamento de Soporte Técnico con 5 nuevos colaboradores, que estarán apoyando a nuestros usuarios vía remota en nuestro chat, vía telefónica y vía correo electrónico, para todo aquel que requiera ayuda o tenga dudas la primera vez que compre alguno de nuestros productos, y para todo aquel que requiera informes para adquirir nuestros productos. En los próximos meses estaremos abriendo más departamentos, y si tú cuentas con el espíritu pro-activo de nuestro equipo, quieres conocer cómo se trabaja en una start-up y sientes que puedes aportar para llevar nuestro proyecto al siguiente nivel, en la parte posterior podrás revisar nuestros Próximos Proyectos en los cuales estaremos trabajando en la segunda mitad del 2022 y primera mitad del 2023. De igual manera tenemos el listado de Nuestros Distribuidores en la parte posterior, en caso de que estés interesado en adquirir nuestros productos en un punto de venta físico. ¡Nos gustaría que te unas al equipo Celufónica! Revisa las vacantes disponibles en el widget de abajo.</p>
-                </div>
-                <div class="col-md-5 order-md-2">
-                    <img src="../assets/img/nosotrostres.jpg" alt="Nuestro equipo de trabajo" class="img-fluid nosotros-img">
-                </div>
-            </div>
-            <hr class="nosotros-divider">
-                <div class="row sobre-nosotros widgets">
-                    <div class="col-md-6 widget widget-1">
-                        <h3>PRÓXIMOS PROYECTOS</h3>
-                    </div>
-                    <div class="col-md-6 widget widget-2">
-                        <h3>NUESTROS DISTRIBUIDORES</h3>
-                    </div>
-                </div>
-                <hr class="nosotros-divider">
-                <div class="row nosotros-vacantes"">
-                    <div class="col-md-12">
-                        <h4>Unete al equipo</h4>
-                        <a href="#" class="nosotros-link">Ver Vacantes</a>
-                    </div>
-                </div>
         </div>
-
+        <hr class="nosotros-divider">
+        <div class="row px-0 sobre-nosotros d-flex justify-content-center align-items-center align-content-center">
+            <div class="col-lg-6 order-md-1 nosotros-mision">
+                <h1 class="nosotros-titulo">Nuestro Futuro</h1>
+                <p class="nosotros-text">Lo que comenzó con una pequeña oficina en Ciudad de México, ahora soñamos con que se expanda a más lugares de la República Mexicana. Si bien ya contamos con diversos puntos de ventaen algunos estados de la república gracias a nuestros distribuidores, queremos que nuestras operaciones se expandan a los demás estados para tener un mayor alcance a más usuarios que aún no han podido probar nuestro servicio y no se pierdan de la experiencia Celufónica. Nos complace anunciar que recién a inicios del 2022 abrimos nuestro departamento de Soporte Técnico con 5 nuevos colaboradores, que estarán apoyando a nuestros usuarios vía remota en nuestro chat, vía telefónica y vía correo electrónico, para todo aquel que requiera ayuda o tenga dudas la primera vez que compre alguno de nuestros productos, y para todo aquel que requiera informes para adquirir nuestros productos. En los próximos meses estaremos abriendo más departamentos, y si tú cuentas con el espíritu pro-activo de nuestro equipo, quieres conocer cómo se trabaja en una start-up y sientes que puedes aportar para llevar nuestro proyecto al siguiente nivel, en la parte posterior podrás revisar nuestros Próximos Proyectos en los cuales estaremos trabajando en la segunda mitad del 2022 y primera mitad del 2023. De igual manera tenemos el listado de Nuestros Distribuidores en la parte posterior, en caso de que estés interesado en adquirir nuestros productos en un punto de venta físico. ¡Nos gustaría que te unas al equipo Celufónica! Revisa las vacantes disponibles en el widget de abajo.</p>
+            </div>
+            <div class="col-lg-6 order-md-2 nosotros-slider">
+                <div id="nosotros-segundo-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="2000">
+                            <img src="../assets/img/nosotroscuatro.jpg" class="d-block w-100" alt="Nuestro equipo de trabajo">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="../assets/img/nosotroscinco.jpg" class="d-block w-100" alt="Nuestro equipo de trabajo">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="../assets/img/nosotrosseis.jpg" class="d-block w-100" alt="Nuestro equipo de trabajo">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#nosotros-segundo-carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#nosotros-segundo-carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <hr class="nosotros-divider">
+        <div class="row p-4 sobre-nosotros widgets justify-content-center">
+            <div class="col-md-6 widget widget-1">
+                <h3>PRÓXIMOS PROYECTOS</h3>
+            </div>
+            <div class="col-md-6 widget widget-2">
+                <h3>NUESTROS DISTRIBUIDORES</h3>
+            </div>
+            <div class="col-12 mt-3 py-2 nosotros-vacantes">
+                <h4>Unete al equipo</h4>
+                <a href="#" class="nosotros-link">Ver Vacantes</a>
+            </div>
+        </div>
+    </div>
     <footer>
         <div class="container-fluid footer">
             <div class="row p-5">
