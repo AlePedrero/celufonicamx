@@ -7,13 +7,14 @@
     <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/c576db8c87.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/styles.css">
     <title>Nosotros | Celufónica</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg header">
         <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html"><img class="header-img" src="../assets/img/logonobg.png" alt="Logo Celufonica"></a>
+            <a class="navbar-brand" href="../index.html" data-aos="fade-up" data-aos-delay="100"><img class="header-img" src="../assets/img/logonobg.png" alt="Logo Celufonica"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -41,7 +42,7 @@
         </div>
     </nav>
     <div class="container fluid mt-1 px-0 nosotros">
-        <div class="row px-0 sobre-nosotros d-flex justify-content-center align-items-center align-content-center">
+        <div class="row px-0 sobre-nosotros d-flex justify-content-center align-items-center align-content-center" data-aos="fade-up" data-aos-duration="1000">
             <div class="col-lg-6 nosotros-slider">
                 <div id="nosotros-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <div class="carousel-inner">
@@ -70,7 +71,7 @@
                 <p class="nosotros-text">Nosotros somos Celufónica, una start-up mexicana enfocada a servicios de operador de telefonía y proveedor de internet. Comenzó como una idea entre un grupo de amigos, a finales de 2019. Al haber comenzado el proyecto recién empezada la pandemia, nos llevó a realizar todo nuestro trabajo de manera remota, lo que hizo más eficiente nuestro trabajo y nos llevó a desarrollarlo más rápido para salir al mercado con un MVP muy sencillo: brindando el servicio de Telefonía Celular. Después, fuimos expandiéndo la empresa a llevar a cabo otros servicios, como lo son el servicio de Internet Fijo y el servicio de Internet Portátil. Estamos comprometidos con nuestros usuarios y sabemos que lo que necesitan es un servicio de calidad, a un bajo costo para que todos tengan acceso a Internet, en estos tiempos es muy importante y valioso contar con un proveedor que sea confiable y sobre todo, que se preocupe por las necesidades de nuestros usuarios, para que tengan la mejor experiencia posible al ser un cliente de Celufónica. Estamos muy orgullosos de presentar los siguientes logros obtenidos en tan sólo 18 meses de trabajo:</p>
                 <div class="nosotros-logros">
                     <div class="logro-uno">
-                        <h2>+500k</h2>
+                        <h2>500k</h2>
                         <h4>Usuarios activos en el primer año.</h4>
                     </div>
                     <div class="logro-dos">
@@ -85,7 +86,7 @@
             </div>
         </div>
         <hr class="nosotros-divider">
-        <div class="row px-0 sobre-nosotros d-flex justify-content-center align-items-center align-content-center">
+        <div class="row px-0 sobre-nosotros d-flex justify-content-center align-items-center align-content-center" data-aos="fade-up" data-aos-duration="1000">
             <div class="col-lg-6 order-md-1 nosotros-mision">
                 <h1 class="nosotros-titulo">Nuestro Futuro</h1>
                 <p class="nosotros-text">Lo que comenzó con una pequeña oficina en Ciudad de México, ahora soñamos con que se expanda a más lugares de la República Mexicana. Si bien ya contamos con diversos puntos de ventaen algunos estados de la república gracias a nuestros distribuidores, queremos que nuestras operaciones se expandan a los demás estados para tener un mayor alcance a más usuarios que aún no han podido probar nuestro servicio y no se pierdan de la experiencia Celufónica. Nos complace anunciar que recién a inicios del 2022 abrimos nuestro departamento de Soporte Técnico con 5 nuevos colaboradores, que estarán apoyando a nuestros usuarios vía remota en nuestro chat, vía telefónica y vía correo electrónico, para todo aquel que requiera ayuda o tenga dudas la primera vez que compre alguno de nuestros productos, y para todo aquel que requiera informes para adquirir nuestros productos. En los próximos meses estaremos abriendo más departamentos, y si tú cuentas con el espíritu pro-activo de nuestro equipo, quieres conocer cómo se trabaja en una start-up y sientes que puedes aportar para llevar nuestro proyecto al siguiente nivel, en la parte posterior podrás revisar nuestros Próximos Proyectos en los cuales estaremos trabajando en la segunda mitad del 2022 y primera mitad del 2023. De igual manera tenemos el listado de Nuestros Distribuidores en la parte posterior, en caso de que estés interesado en adquirir nuestros productos en un punto de venta físico. ¡Nos gustaría que te unas al equipo Celufónica! Revisa las vacantes disponibles en el widget de abajo.</p>
@@ -117,10 +118,10 @@
         <hr class="nosotros-divider">
         <div class="row p-4 sobre-nosotros widgets justify-content-center">
             <div class="col-md-6 widget widget-1">
-                <h3>PRÓXIMOS PROYECTOS</h3>
+                <h3><a href="#">PRÓXIMOS PROYECTOS</a></h3>
             </div>
             <div class="col-md-6 widget widget-2">
-                <h3>NUESTROS DISTRIBUIDORES</h3>
+                <h3><a href="#">NUESTROS DISTRIBUIDORES</a></h3>
             </div>
             <div class="col-12 mt-3 py-2 nosotros-vacantes">
                 <h4>Unete al equipo</h4>
@@ -181,6 +182,11 @@
         </div>
     </footer>
 <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<!--Script AOS Library-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

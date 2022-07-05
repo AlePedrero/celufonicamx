@@ -7,13 +7,14 @@
     <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/c576db8c87.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/styles.css">
     <title>Productos | Celufónica</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg header">
         <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html"><img class="header-img" src="../assets/img/logonobg.png"></a>
+            <a class="navbar-brand" href="../index.html" data-aos="fade-up" data-aos-delay="100"><img class="header-img" src="../assets/img/logonobg.png"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -41,34 +42,34 @@
         </div>
     </nav>
     <section class="productos">
-        <div class="container-fluid px-0">
+        <div class="container-fluid px-0" data-aos="fade-down" data-aos-duration="1000">
             <div class="row mx-0">
                 <div class="col-12">
-                    <h2 class="see-products-title">Conoce nuestros productos.</h2>
+                    <h1 class="see-products-title">Conoce nuestros productos.</h1>
                 </div>
             </div>
             <div class="row see-products mx-0">
                 <div class="col-md-4 see-products-card">
                     <div class="prod-contenido">
                         <img class="img-fluid prod-img" src="../assets/img/sim.png" alt="Telefonía Celular">
-                        <h3 class="prod-titulo">Telefonía Celular</h3>
+                        <h2 class="prod-titulo">Telefonía Celular</h2>
                         <p class="prod-txt">¡Conoce las promociones de bienvenida que tenemos para tí! Sé parte de nuestra red, somos tu mejor opción prepago.</p>
-                    <button type="button" class="btn prod-btn" data-bs-toggle="modal" data-bs-target="#telefonia-modal">Ver más <i class="fa-solid fa-arrow-up-right-from-square prod-btn-icon"></i></button>
+                        <button type="button" class="btn prod-btn" data-bs-toggle="modal" data-bs-target="#telefonia-modal">Ver más <i class="fa-solid fa-arrow-up-right-from-square prod-btn-icon"></i></button>
                     </div>
                 </div>
                 <!-- Modal Telefonia -->
                 <div class="modal fade prod-modal" id="telefonia-modal" tabindex="-1">
-                    <div class="modal-dialog">
+                    <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title">Información acerca del servicio</h5>
+                                <h3 class="modal-title">Información acerca del servicio</h3>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <h5>Puntos importantes a considerar</h5>
+                                <h4>Puntos importantes a considerar</h4>
                                 <ul>
                                     <li>Para la contratación de este servicio, sólo agrega el producto de tu elección en el carrito para continuar el proceso de compra.</li>
-                                    <li>Nuestros planes no son fijos, son prepago, por lo tanto puedes recargar cada vez que quieras, cuando quieras, las veces que quieras. <strong class="muted">¡Próximamente tendremos información sobre nuestros planes fijos!</strong></li>
+                                    <li>Nuestros planes no son fijos, son prepago, por lo tanto puedes recargar cada vez que quieras, cuando quieras, las veces que quieras. <strong>¡Próximamente tendremos información sobre nuestros planes fijos!</strong></li>
                                 </ul>
                             </div>
                         </div>
@@ -77,21 +78,21 @@
                 <div class="col-md-4 see-products-card">
                     <div class="prod-contenido">
                         <img class="img-fluid prod-img" src="../assets/img/intport.png" alt="Internet Fijo">
-                        <h3 class="prod-titulo">Internet Portátil</h3>
+                        <h2 class="prod-titulo">Internet Portátil</h2>
                         <p class="prod-txt">¡Conoce nuestros diferentes paquetes! Adquiere tu SIM, o adquiere el Router con la SIM incluida.</p>
                         <button type="button" class="btn prod-btn" data-bs-toggle="modal" data-bs-target="#intport-modal">Ver más <i class="fa-solid fa-arrow-up-right-from-square prod-btn-icon"></i></button>
                     </div>
                 </div>
                 <!-- Modal Internet Portátil -->
                 <div class="modal fade" id="intport-modal" tabindex="-1">
-                    <div class="modal-dialog">
+                    <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title">Información acerca del servicio</h5>
+                                <h3 class="modal-title">Información acerca del servicio</h3>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <h5>Puntos importantes a considerar</h5>
+                                <h4>Puntos importantes a considerar</h4>
                                 <ul>
                                     <li>Para la contratación de este servicio, existen dos opciones de compra.</li>
                                         <ul>
@@ -107,21 +108,21 @@
                 <div class="col-md-4 see-products-card">
                     <div class="prod-contenido">
                         <img class="img-fluid prod-img" src="../assets/img/intfijo.png" alt="Internet Portátil">
-                        <h3 class="prod-titulo">Internet Fijo</h3>
+                        <h2 class="prod-titulo">Internet Fijo</h2>
                         <p class="prod-txt">¡Adquiere tu módem portátil! Si ya cuentas con uno sólo adquiere la SIM, o adquiérelo junto con tu SIM y recarga incluida.</p>
                         <button type="button" class="btn prod-btn" data-bs-toggle="modal" data-bs-target="#intfijo-modal">Ver más <i class="fa-solid fa-arrow-up-right-from-square prod-btn-icon"></i></button>
                     </div>
                 </div>
                 <!-- Modal Internet Fijo -->
                 <div class="modal fade" id="intfijo-modal" tabindex="-1">
-                    <div class="modal-dialog">
+                    <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title">Información acerca del servicio</h5>
+                                <h3 class="modal-title">Información acerca del servicio</h3>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <h5>Puntos importantes a considerar</h5>
+                                <h4>Puntos importantes a considerar</h4>
                                 <ul>
                                     <li>Para la contratación de este servicio, existen dos opciones de compra.</li>
                                         <ul>
@@ -137,15 +138,15 @@
             </div>
         </div>
     </section>
-    <section class="promociones-container px-5 mx-5"> <!--pendiente: gregar modales-->
+    <section class="promociones-container px-5 mx-5">
         <div class="container-fluid justify-content-center align-items-center align-content-center">
-            <h3 class="font-weight-bold see-products-title">Telefonía Celular</h3>
-            <div class="row pb-5 mb-4 justify-content-center align-items-center align-content-center">
+            <h2 class="font-weight-bold see-products-title">Telefonía Celular</h2>
+            <div class="row pb-5 mb-4 justify-content-center align-items-center align-content-center" data-aos="fade-down" data-aos-duration="3000">
                 <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
                     <div class="card rounded promo-card">
                         <div class="card-body p-4">
                             <img src="../assets/img/simnobg4.png" alt="" class="img-fluid d-block mx-auto mb-3 promo-img">
-                            <h5 class="nombre-promo">SIM para Telefonía Celular</h5>
+                            <h3 class="nombre-promo">SIM para Telefonía Celular</h3>
                             <p class="small text-muted font-italic txt-promo">+ Promoción de portabilidad. Click abajo para más detalles.</p>
                             <button class="btn prod-btn" data-bs-toggle="modal" data-bs-target="#sim-tel-uno">Ver beneficios <i class="fa-solid fa-circle-right"></i></button> 
                         </div>
@@ -153,7 +154,7 @@
                 </div>
                 <!-- SIM para Telefonía Celular -->
                 <div class="modal fade" id="sim-tel-uno" tabindex="-1">
-                    <div class="modal-dialog">
+                    <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h4 class="modal-title">Información acerca del producto</h4>
@@ -185,7 +186,7 @@
                     <div class="card rounded promo-card">
                         <div class="card-body p-4">
                             <img src="../assets/img/simnobg1.png" alt="" class="img-fluid d-block mx-auto mb-3 promo-img">
-                            <h5 class="nombre-promo">SIM para Telefonía Celular</h5>
+                            <h3 class="nombre-promo">SIM para Telefonía Celular</h3>
                             <p class="small text-muted font-italic txt-promo">+ Recarga 2 en 1. Click abajo para más detalles.</p>
                             <button class="btn prod-btn" data-bs-toggle="modal" data-bs-target="#sim-tel-dos">Ver beneficios <i class="fa-solid fa-circle-right"></i></button>
                         </div>
@@ -193,7 +194,7 @@
                 </div>
                 <!-- SIM para Telefonía Celular 2 en 1 -->
                 <div class="modal fade" id="sim-tel-dos" tabindex="-1">
-                    <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h4 class="modal-title">Información acerca del producto</h4>
@@ -226,7 +227,7 @@
                     <div class="card rounded promo-card">
                         <div class="card-body p-4">
                             <img src="../assets/img/simnobg5.png" alt="" class="img-fluid d-block mx-auto mb-3 promo-img">
-                            <h5 class="nombre-promo">SIM para Telefonía Celular</h5>
+                            <h3 class="nombre-promo">SIM para Telefonía Celular</h3>
                             <p class="small text-muted font-italic txt-promo">+ Plan Semestral. Próximamente más detalles.</p>
                             <button class="btn prod-btn disabled">Muy Pronto <i class="fa-solid fa-circle-right"></i></button>
                         </div>
@@ -235,7 +236,7 @@
                 <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
                     <div class="card rounded promo-card">
                         <div class="card-body p-4"><img src="../assets/img/simnobg5.png" alt="" class="img-fluid d-block mx-auto mb-3 promo-img">
-                            <h5 class="nombre-promo">SIM para Telefonía Celular</h5>
+                            <h3 class="nombre-promo">SIM para Telefonía Celular</h3>
                             <p class="small text-muted font-italic txt-promo">+ Plan Anual. Próximamente más detalles.</p>
                             <button class="btn prod-btn disabled">Muy Pronto <i class="fa-solid fa-circle-right"></i></button>
                         </div>
@@ -243,12 +244,12 @@
                 </div>
             </div>
             <h2 class="font-weight-bold see-products-title">Internet Portátil</h2>
-            <div class="row justify-content-center align-items-center align-content-center pb-5 mb-4">
+            <div class="row justify-content-center align-items-center align-content-center pb-5 mb-4" data-aos="fade-down" data-aos-duration="3000">
                 <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
                     <div class="card rounded promo-card">
                         <div class="card-body p-4">
                             <img src="../assets/img/simnobg4.png" alt="" class="img-fluid d-block mx-auto mb-3 promo-img">
-                            <h5 class="nombre-promo mb-4">SIM para Internet Portátil</h5>
+                            <h3 class="nombre-promo mb-4">SIM para Internet Portátil</h3>
                             <p class="small text-muted font-italic txt-promo">+Promoción de bienvenida. Click abajo para más detalles.</p>
                             <button class="btn prod-btn" data-bs-toggle="modal" data-bs-target="#sim-intport">Ver beneficios <i class="fa-solid fa-circle-right"></i></button>
                         </div>
@@ -256,7 +257,7 @@
                 </div>
                 <!-- SIM para Internet Portátil -->
                 <div class="modal fade" id="sim-intport" tabindex="-1">
-                    <div class="modal-dialog">
+                    <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h4 class="modal-title">Información acerca del producto</h4>
@@ -286,7 +287,7 @@
                     <div class="card rounded promo-card">
                         <div class="card-body p-4">
                             <img src="../assets/img/modemnobg1.png" alt="" class="img-fluid d-block mx-auto mb-3 promo-img">
-                            <h5 class="nombre-promo mb-2">Paquete Internet Portátil 2 en 1</h5>
+                            <h3 class="nombre-promo mb-2">Paquete Internet Portátil 2 en 1</h3>
                             <p class="small text-muted font-italic txt-promo">Incluye una SIM + Módem Portátil. Click abajo para más detalles. </p>
                             <button class="btn prod-btn" data-bs-toggle="modal" data-bs-target="#sim-intport-dos">Ver beneficios <i class="fa-solid fa-circle-right"></i></button>
                         </div>
@@ -294,7 +295,7 @@
                 </div>
                 <!-- SIM para Internet Portátil 2 en 1-->
                 <div class="modal fade" id="sim-intport-dos" tabindex="-1">
-                    <div class="modal-dialog">
+                    <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h4 class="modal-title">Información acerca del producto</h4>
@@ -325,7 +326,7 @@
                     <div class="card rounded promo-card">
                         <div class="card-body p-4">
                             <img src="../assets/img/modemnobg3.png" alt="" class="img-fluid d-block mx-auto mb-3 promo-img">
-                            <h5 class="nombre-promo">Paquete Internet Portátil 3 en 1</h5>
+                            <h3 class="nombre-promo">Paquete Internet Portátil 3 en 1</h3>
                             <p class="small text-muted font-italic txt-promo">SIM + Módem Portátil + Recarga. Click abajo para más detalles.</p>
                             <button class="btn prod-btn" data-bs-toggle="modal" data-bs-target="#sim-intport-tres">Ver beneficios <i class="fa-solid fa-circle-right"></i></button>
                         </div>
@@ -333,7 +334,7 @@
                 </div>
                 <!-- SIM para Internet Portátil 3 en 1-->
                 <div class="modal fade" id="sim-intport-tres" tabindex="-1">
-                    <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h4 class="modal-title">Información acerca del producto</h4>
@@ -364,7 +365,7 @@
                 <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
                     <div class="card rounded promo-card">
                         <div class="card-body p-4"><img src="../assets/img/simnobg5.png" alt="" class="img-fluid d-block mx-auto mb-3 promo-img">
-                            <h5 class="nombre-promo"> SIM para Internet Portátil</h5>
+                            <h3 class="nombre-promo"> SIM para Internet Portátil</h3>
                             <p class="small text-muted font-italic txt-promo">Plan Anual. Puede incluir Módem. Próximamente más detalles.</p>
                             <button class="btn prod-btn disabled">Muy Pronto <i class="fa-solid fa-circle-right"></i></button>
                         </div>
@@ -372,11 +373,11 @@
                 </div>
             </div>
             <h2 class="font-weight-bold see-products-title">Internet Fijo</h2>
-            <div class="row pb-5 mb-4 justify-content-center align-items-center align-content-center">
+            <div class="row pb-5 mb-4 justify-content-center align-items-center align-content-center" data-aos="fade-down" data-aos-duration="3000">
                 <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
                     <div class="card rounded promo-card">
-                        <div class="card-body p-4"><img src="../assets/img/simnobg4.png" alt="" class="img-fluid d-block mx-auto mb-4 promo-img">
-                            <h5 class="nombre-promo mb-4"> SIM para Internet Fijo</h5>
+                        <div class="card-body py-4 px-3"><img src="../assets/img/simnobg4.png" alt="" class="img-fluid d-block px-2 mx-auto mb-4 promo-img">
+                            <h3 class="nombre-promo mb-4"> SIM para Internet Fijo</h3>
                             <p class="small text-muted font-italic txt-promo">+Promoción de bienvenida. Click abajo para más detalles.</p>
                             <button class="btn prod-btn" data-bs-toggle="modal" data-bs-target="#sim-intfijo">Ver beneficios <i class="fa-solid fa-circle-right"></i></button>
                         </div>
@@ -384,7 +385,7 @@
                 </div>
                 <!-- SIM para Internet Fijo-->
                 <div class="modal fade" id="sim-intfijo" tabindex="-1">
-                    <div class="modal-dialog">
+                    <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h4 class="modal-title">Información acerca del producto</h4>
@@ -414,7 +415,7 @@
                     <div class="card rounded promo-card">
                         <div class="card-body p-4">
                             <img src="../assets/img/routernobg1.png" alt="" class="img-fluid d-block mx-auto mb-3 promo-img">
-                            <h5 class="nombre-promo mb-2">Paquete Internet Fijo 2 en 1</h5>
+                            <h3 class="nombre-promo mb-2">Paquete Internet Fijo 2 en 1</h3>
                             <p class="small text-muted font-italic txt-promo">Incluye una SIM + Router Fijo. Click abajo para más detalles.</p>
                             <button class="btn prod-btn" data-bs-toggle="modal" data-bs-target="#sim-intfijo-dos">Ver beneficios <i class="fa-solid fa-circle-right"></i></button>
                         </div>
@@ -422,7 +423,7 @@
                 </div>
                 <!-- SIM para Internet Fijo 2 en 1-->
                 <div class="modal fade" id="sim-intfijo-dos" tabindex="-1">
-                    <div class="modal-dialog">
+                    <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h4 class="modal-title">Información acerca del producto</h4>
@@ -453,7 +454,7 @@
                     <div class="card rounded promo-card">
                         <div class="card-body p-4">
                             <img src="../assets/img/routernobg2.png" alt="" class="img-fluid d-block mx-auto mb-3 promo-img">
-                            <h5 class="nombre-promo">Paquete Internet Fijo 3 en 1</h5>
+                            <h3 class="nombre-promo">Paquete Internet Fijo 3 en 1</h3>
                             <p class="small text-muted font-italic txt-promo">SIM + Router Fijo + Recarga. Click abajo para más detalles.</p>
                             <button class="btn prod-btn" data-bs-toggle="modal" data-bs-target="#sim-intfijo-tres">Ver beneficios <i class="fa-solid fa-circle-right"></i></button>
                         </div>
@@ -461,7 +462,7 @@
                 </div>
                 <!-- SIM para Internet Fijo 3 en 1-->
                 <div class="modal fade" id="sim-intfijo-tres" tabindex="-1">
-                    <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h4 class="modal-title">Información acerca del producto</h4>
@@ -491,9 +492,9 @@
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
                     <div class="card rounded promo-card">
-                        <div class="card-body p-4"><img src="../assets/img/simnobg5.png" alt="" class="img-fluid d-block mx-auto mb-3 promo-img">
-                            <h5 class="nombre-promo">SIM para Internet Fijo</h5>
-                            <p class="small text-muted font-italic txt-promo">+Plan Anual. El Router viene incluido. Próximamente más detalles.</p>
+                        <div class="card-body py-3 px-3"><img src="../assets/img/simnobg5.png" alt="" class="img-fluid d-block mx-auto px-2 mb-3 promo-img">
+                            <h3 class="nombre-promo">SIM para Internet Fijo</h3>
+                            <p class="small text-muted font-italic txt-promo">+Plan Anual. Con la posibilidad de incluir el Router si el cliente lo desea. Próximamente más detalles.</p>
                             <button class="btn prod-btn disabled">Muy Pronto <i class="fa-solid fa-circle-right"></i></button>
                         </div>
                     </div>
@@ -554,6 +555,11 @@
         </div>
     </footer>
 <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<!--Script AOS Library-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

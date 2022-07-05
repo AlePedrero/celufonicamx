@@ -291,7 +291,7 @@ body {
     outline: none;
     background: #c3c0d560;;
     padding: 0 20px;
-    font-size: 16px;
+    font-size: 1rem;
     color: #000000;
     font-family: inherit;
 }
@@ -364,7 +364,7 @@ body {
 }
 
 .rrss-icon {
-    font-size: 30px;
+    font-size: 2rem;
     color: #FFFFFF
 }
 
@@ -374,9 +374,9 @@ body {
     padding: 8px 16px;
     background-color: #000000;
     color: #FFFFFF;
-    font-size: 16px;
+    font-size: 1rem;
     white-space: nowrap;
-    font-weight: 700;
+    font-weight: 600;
     border-radius: 8px;
     pointer-events: none;
 }
@@ -423,7 +423,7 @@ body {
 }
 
 .footer-credit small {
-    font-size: 13px;
+    font-size: 0.8rem;
 }
 
 .footer-credit a {
@@ -461,10 +461,10 @@ body {
 .nosotros-logros {  
     display: grid;
     padding: 15px;
-    margin: 10px;
+    margin: 15px;
     text-align: center;
-    grid-template-columns: 0.5fr 0.5fr 0.5fr;
-    grid-template-rows: 0.5fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     gap: 10px 25px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -489,7 +489,6 @@ body {
 
 .widget {
     opacity: 0.7;
-	color: #fff;
     text-shadow: 2px 0px #000000;
 	height: 300px;
 	text-align: center;
@@ -497,6 +496,11 @@ body {
 	align-items: center;
 	justify-content: center;
     font-size: 1.5rem;
+}
+
+.widget a {
+    text-decoration: none;
+    color: #fff;
 }
 
 .widget:hover {
@@ -524,7 +528,7 @@ body {
 }
 
 .nosotros-vacantes h4 {
-    font-size: 20px;
+    font-size: 1.5rem;
 }
 
 .nosotros-link {
@@ -547,12 +551,12 @@ body {
     }
 
     .nosotros-logros h2 {
-        font-size: 35px;
+        font-size: 2.3rem;
         color: #231942;
     }
 
     .nosotros-logros h4 {
-        font-size: 13px;
+        font-size: 0.7rem;
         color: #574b90;
     }
 }
@@ -577,11 +581,11 @@ body {
     margin: 5px;
     color: rgba(0, 0, 0, 0.8);
     pointer-events: none;
-    font-size: 25px;
+    font-size: 1.5rem;
 }
 
 .prod-txt {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 300;
 }
 
@@ -616,6 +620,10 @@ body {
     max-height: 500px;
 }
 
+.nombre-promo {
+    font-size: 1.4rem;
+}
+
 .promo-img {
     width: 300px;
     height: 10vw;
@@ -633,6 +641,12 @@ body {
     transition: 0.5s;
     cursor: pointer;
     transform: scale(1.2);
+}
+
+.promo-card .prod-btn {
+    width: 100%;
+    padding: 15px 0px;
+    font-size: 0.8rem;
 }
 
 /*===MODALES PRODUCTOS===*/
@@ -677,7 +691,7 @@ body {
             max-width: 350px;
         }
     .promo-card .prod-btn {
-        font-size: 13px;
+        font-size: 0.8rem;
     }
     }
 
@@ -713,7 +727,7 @@ body {
 .acc-form {
     width: 100%;
     padding: 35px 5px 5px 5px;
-    font-size: 17px;
+    font-size: 1rem;
 }
 
 .acc-form input {
@@ -723,7 +737,7 @@ body {
     border: none;
     outline: none;
     background: none;
-    font-size: 15px;
+    font-size: 1rem;
     color: #555;
     padding: 10px;
     margin-bottom: 30px;
@@ -741,7 +755,7 @@ body {
     border-radius: 30px;
     font-weight: 700;
     font-family: inherit;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #FFFFFF;
     text-align: center;
     background: #5E548E;
@@ -766,7 +780,7 @@ body {
 .acc-txt a {
     text-decoration: none;
     color: #231942;
-    font-size: 13px;
+    font-size: 0.8rem;
 }
 
 .acc-txt a:hover {
@@ -828,13 +842,18 @@ body {
     width: 100%;
 }
 
-.aside-formulario h2 {
+.aside-formulario h1 {
+    font-size: 2rem;
     text-align: center;
+}
+
+.aside-formulario small {
+    font-size: 0.9rem;
 }
 
 .form-input {
     padding: 8px;
-    font-size: 14px;
+    font-size: 0.8rem;
     resize: vertical;
     background-color: #EEEEEE; 
     border: none;
@@ -859,7 +878,7 @@ body {
 }
 
 #submit + label, #reset + label {
-    font-size: 20px;
+    font-size: 1.2rem;
     padding: 10px;
     cursor: pointer;
     color: #52565E;
@@ -888,7 +907,7 @@ body {
     text-align: center;
     padding-top: 10px;
     list-style: none;
-    font-size: 14px;
+    font-size: 0.9rem;
     margin-top: 90px;
     margin-right: 25px;
     color: #231942;
@@ -896,7 +915,7 @@ body {
 }
 
 .contacto-icon {
-    font-size: 30px;
+    font-size: 2rem;
     color: #231942;
 }
 
@@ -915,17 +934,14 @@ body {
 }
 /*===MEDIA QUERIES===*/
 @media screen and (max-width: 992px) {
-    .form-contacto
-    {
+    .form-contacto {
         flex-direction: column;
         flex-wrap: wrap;
         width: 80%;
         color: #000000;
-        font-size: 25px;
     }
 
-    .aside-formulario,.aside-rrss
-    {
+    .aside-formulario,.aside-rrss {
         width: 100%;
     }
 
@@ -974,7 +990,7 @@ th {
     color: #FFFFFF;
     background-color: #AF90E9;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 1rem;
 }
 
 td {
@@ -993,7 +1009,7 @@ td input {
 
 td a {
     color: #574b90;
-    font-size: 12px;
+    font-size: 0.7rem;
     text-decoration: none;
 }
 
@@ -1010,7 +1026,7 @@ td a {
 }
 
 .shipping {
-    font-size: 13px;
+    font-size: 0.8rem;
 }
 
 td:last-child {
@@ -1027,23 +1043,23 @@ th:last-child {
     }
 
     th {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     td {
-        font-size: 18px;
+        font-size: 1.1rem;
     }
 
     table p {
-        font-size: 18px;
+        font-size: 1.1rem;
     }
 
     table small {
-        font-size: 15px;
+        font-size: 1rem;
     }
 
     table .btn-index {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 }
 
@@ -1099,7 +1115,7 @@ th:last-child {
 
 .selector-pdv h1 {
     margin-bottom: 10px;
-    font-size: 35px;
+    font-size: 2.3rem;
 }
 
 .selector-pdv select {

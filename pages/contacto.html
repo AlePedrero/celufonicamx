@@ -7,17 +7,18 @@
     <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/c576db8c87.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/styles.css">
     <title>Contacto | Celufónica</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg header">
         <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html"><img class="header-img" src="../assets/img/logonobg.png"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="../index.html" data-aos="fade-up" data-aos-delay="100"><img class="header-img" src="../assets/img/logonobg.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse justify-content-end" id="menu-navbar">
                 <ul class="navbar-nav justify-content-end header-links">
                 <li class="nav-item">
                 <a class="nav-link header-link" aria-current="page" href="../index.html">Inicio</a>
@@ -41,12 +42,12 @@
         </div>
     </nav>
     <section class="contactanos d-flex justify-content-center">
-        <div class="form-contacto">
+        <div class="form-contacto" data-aos="fade-up" data-aos-duration="1000">
             <div class="aside-formulario">
-                <h2 class="mb-3">Contacto</h2>
-                <h3><!--Texto genérico de contacto--></h3>
+                <h1 class="mb-1">Contacto</h1>
+                <small class="text-muted">¿Quieres colaborar con nosotros? ¿Tienes dudas acerca de algo? Llena el siguiente formulario y con gusto te responderemos lo más pronto posible.</small>
                 <form action="/" formulario">
-                    <div class="row g-3">
+                    <div class="row g-3 mt-1">
                         <div class="col-md-6 form-group">
                             <label class="form-label" for="nombre"><p>Nombre:</p></label>
                             <input type="text" name="nombre" class="form-control form-input nombre" placeholder="Coloca tu nombre completo" id="nombre" required>
@@ -97,13 +98,13 @@
                     <div class="row g-3">
                         <div class="col-md-12">
                             <label for="tipo-de-contacto"><p>¿Por cuál medio deseas que te contactemos?</p></label>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="tipo-de-contacto" class="inline" value="via-telefonica">
+                            <div class="form-check-inline">
+                                <input class="form-check-input inline" type="radio" name="tipo-de-contacto" value="via-telefonica">
                                 <label class="form-check-label" for="tipo-de-contacto">
                                 Vía Telefónica</label>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="tipo-de-contacto" id="flexRadioDefault2" class="inline" checked>
+                            <div class="form-check-inline">
+                                <input class="form-check-input inline" type="radio" name="tipo-de-contacto" id="flexRadioDefault2" checked>
                                 <label class="form-check-label" value="via-email" for="tipo-de-contacto">Vía Correo</label>
                             </div>
                         </div>
@@ -111,7 +112,7 @@
                     <div class="row g-3">
                         <div class="col-md-12 botones-form">
                             <input id="reset" type="reset"><label for="reset"><i class="fa-solid fa-trash"></i>  Borrar todo</label>
-                        <input id="submit" type="submit"><label for="submit"><i class="fa-solid fa-paper-plane"></i>  Enviar</label>
+                            <input id="submit" type="submit"><label for="submit"><i class="fa-solid fa-paper-plane"></i>  Enviar</label>
                         </div>
                     </div>
                 </form>
@@ -184,5 +185,10 @@
     </footer>
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<!--Script AOS Library-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

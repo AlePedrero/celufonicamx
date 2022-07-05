@@ -7,17 +7,18 @@
     <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/c576db8c87.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/styles.css">
     <title>Mi Cuenta | Celufónica</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg header">
         <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html"><img class="header-img" src="../assets/img/logonobg.png"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="../index.html" data-aos="fade-up" data-aos-delay="100"><img class="header-img" src="../assets/img/logonobg.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse justify-content-end" id="menu-navbar">
                 <ul class="navbar-nav justify-content-end header-links">
                 <li class="nav-item">
                 <a class="nav-link header-link" aria-current="page" href="../index.html">Inicio</a>
@@ -42,46 +43,52 @@
     </nav>
     <section class="account">
         <div class="seccion-acc">
-            <div class="acc-container-column">
+            <div class="acc-container-column" data-aos="fade-right" data-aos-duration="1000">
                 <div class="acc-container">
-                    <h2 class="acc-title">Regístrate y crea tu cuenta</h2>
+                    <h1 class="acc-title">Regístrate y crea tu cuenta</h1>
                     <div class="acc-form">
-                        <label for="telefono-registro"><p>Teléfono:</p></label>
-                            <input type="number" name="telefono-registro" class="form-control acc-input" placeholder="Teléfono a 10 dígitos">
-                        <label for="nombre-registro"><p>Nombre:</p></label>
-                            <input type="text" name="nombre-registro" class="form-control acc-input" placeholder="Nombre completo">
-                        <label for="correo-registro"><p>Correo electrónico:</p></label>
-                            <input type="text" name="correo-registro" class="form-control acc-input" placeholder="micorreo@mail.com">
-                        <label for="nombre-registro"><p>Crea tu nombre de usuario:</p></label>
-                            <input type="text" name="nombre-registro" class="form-control acc-input" placeholder="@Username">
-                        <label for="password-registro"><p>Crea tu contraseña:</p></label>
-                            <input type="password" name="password-registro" class="form-control acc-input" placeholder="Crea tu contraseña">
-                        <label for="password-registro"><p>Repite la contraseña:</p></label>
-                            <input type="password" name="password-registro" class="form-control acc-input" placeholder="&bullet;&bullet;&bullet;&bullet;&bullet;&bullet;&bullet;&bullet;&bullet;&bullet;">
-                        <button class="btn-acc">Regístrate</button>
+                        <form action="/" method="post">
+                            <label for="telefono-registro"><p>Teléfono:</p></label>
+                                <input type="number" name="telefono-registro" class="form-control acc-input" placeholder="Teléfono a 10 dígitos">
+                            <label for="nombre-registro"><p>Nombre:</p></label>
+                                <input type="text" name="nombre-registro" class="form-control acc-input" placeholder="Nombre completo">
+                            <label for="correo-registro"><p>Correo electrónico:</p></label>
+                                <input type="text" name="correo-registro" class="form-control acc-input" placeholder="micorreo@mail.com">
+                            <label for="nombre-registro"><p>Crea tu nombre de usuario:</p></label>
+                                <input type="text" name="nombre-registro" class="form-control acc-input" placeholder="@Username">
+                            <label for="password-registro"><p>Crea tu contraseña:</p></label>
+                                <input type="password" name="password-registro" class="form-control acc-input" placeholder="Crea tu contraseña">
+                            <label for="password-registro"><p>Repite la contraseña:</p></label>
+                                <input type="password" name="password-registro" class="form-control acc-input" placeholder="&bullet;&bullet;&bullet;&bullet;&bullet;&bullet;&bullet;&bullet;&bullet;&bullet;">
+                            <button type="submit" class="btn-acc">Regístrate</button>
+                        </form>
                     </div>
                 </div>
             </div>
             <div class="acc-container-column">
-                <div class="acc-container">
-                    <h2 class="acc-title">Inicia sesión en tu cuenta</h2>
+                <div class="acc-container" data-aos="fade-left" data-aos-duration="1000">
+                    <h1 class="acc-title">Inicia sesión en tu cuenta</h1>
                     <div class="acc-form">
-                        <label for="telefono-registro"><p>Teléfono:</p></label>
-                            <input type="number" name="telefono-registro" class="form-control acc-input" placeholder="Teléfono a 10 dígitos">
-                        <label for="nombre-registro"><p>Contraseña:</p></label>
-                            <input type="password" name="password-cuenta" class="form-control acc-input" placeholder="&bullet;&bullet;&bullet;&bullet;&bullet;&bullet;&bullet;&bullet;&bullet;&bullet;">
-                        <button class="btn-acc">Inicia sesión</button>
+                        <form action="/" method="post">
+                            <label for="telefono-registro"><p>Teléfono:</p></label>
+                                <input type="number" name="telefono-registro" class="form-control acc-input" placeholder="Teléfono a 10 dígitos">
+                            <label for="nombre-registro"><p>Contraseña:</p></label>
+                                <input type="password" name="password-cuenta" class="form-control acc-input" placeholder="&bullet;&bullet;&bullet;&bullet;&bullet;&bullet;&bullet;&bullet;&bullet;&bullet;">
+                            <button type="submit" class="btn-acc">Inicia sesión</button>
+                        </form>
                         <div class="acc-txt">
                             <a href="#">¿Olvidaste tu contraseña?</a>
                         </div>
                     </div>
                 </div>
-                <div class="acc-container">
-                    <h2 class="acc-title">Recarga Express</h2>
+                <div class="acc-container" data-aos="fade-left" data-aos-duration="1000">
+                    <h1 class="acc-title">Recarga Express</h1>
                     <div class="acc-form">
-                        <label for="telefono-registro"><p>Teléfono:</p></label>
-                            <input type="number" name="telefono-registro" class="form-control acc-input" placeholder="Teléfono a 10 dígitos">
-                        <button class="btn-acc">Recarga <i class="fa-solid fa-circle-chevron-right"></i></button>
+                        <form action="/" method="post">
+                            <label for="telefono-registro"><p>Teléfono:</p></label>
+                                <input type="number" name="telefono-registro" class="form-control acc-input" placeholder="Teléfono a 10 dígitos">
+                            <button type="submit" class="btn-acc">Recarga <i class="fa-solid fa-circle-chevron-right"></i></button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -140,6 +147,11 @@
         </div>
     </footer>
 <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<!--Script AOS Library-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
