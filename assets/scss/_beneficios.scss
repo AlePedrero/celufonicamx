@@ -1,0 +1,50 @@
+/*===BENEFICIOS===*/
+.beneficios-container {  
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1.5fr 1.5fr;
+    grid-template-rows: 0.5fr 1fr 1fr;
+    gap: 20px 20px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "beneficios-titulo beneficios-titulo beneficios-titulo beneficios-titulo"
+    "beneficio-uno beneficio-dos beneficio-tres beneficio-cuatro"
+    "beneficio-cinco beneficio-seis beneficio-siete beneficio-ocho";
+    margin: 10px;
+    padding: 50px;
+    .div {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+        position: relative;
+        box-shadow: 10px 10px $boxshadow-glass;
+        border-radius: 15px;
+        background: linear-gradient(transparent, $body-gradient-first, $body-gradient-second, transparent);
+        border: 1px solid $border-glass;
+        backdrop-filter: $blur;
+        .nombre-beneficio {
+            font-size: $bigger-text;
+            padding: 10px;
+            margin:10px;
+        }
+        .beneficio-icon {
+            max-width: 85px;
+            margin: 5px;
+        }
+        .beneficio-txt {
+            margin: 10px;
+            padding: 10px;
+            font-size: $normal-text;
+            font-weight: $normal-weight;
+        }
+    }
+}
+
+.beneficios-titulo { grid-area: beneficios-titulo; }
+.beneficio-uno { grid-area: beneficio-uno; }
+.beneficio-dos { grid-area: beneficio-dos; }
+.beneficio-tres { grid-area: beneficio-tres; }
+.beneficio-cuatro { grid-area: beneficio-cuatro; }
+.beneficio-cinco { grid-area: beneficio-cinco; }
+.beneficio-seis { grid-area: beneficio-seis; }
+.beneficio-siete { grid-area: beneficio-siete; }
+.beneficio-ocho { grid-area: beneficio-ocho; }

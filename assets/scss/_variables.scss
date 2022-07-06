@@ -1,0 +1,65 @@
+// IMPORT TYPOGRAPHY
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+// FONT-FAMILY
+$poppins: "Poppins", "Century Gothic";
+
+// COLORS
+$primary-color: #AF90E9;
+$secondary-color: #5E548E;
+$terciary-color: #8A4FFF;
+$light-color: #FFFFFF;
+$light-semitransparent: #FCFCFC;
+$light-transparent: #ecf0f3;
+$muted-color: #555555;
+$dark-color: #000000;
+$dark-secondary-color: #231942;
+$dark-terciary-color: #574b90;
+$accent-color: #9F86C0;
+$alt-accent-color: #BE95C4;
+$semitransparent-color: rgba(71, 75, 144, 0.024);
+$transparent-color: rgba(195, 192, 213, 0.376);
+$dark-semitransparent: rgba(0, 0, 0, 0.8);
+$body-gradient-first: rgba(131, 33, 243, 0.251);
+$body-gradient-second: rgba(115, 30, 233, 0.157);
+$bg-gradient-alt: linear-gradient(transparent, rgba(131, 33, 243, 0.137),rgba(118, 30, 233, 0.173), transparent);
+$bg-glass: rgba(255, 255, 255, 0.6);
+$boxshadow-glass: rgba(0, 0, 0, 0.2);
+$border-glass: rgba(255, 255, 255, 0.5);
+$blur: blur(5px);
+$alt-blur: blur(20px);
+$bg-modal: rgba(255, 255, 255, 0.7);
+$blur-modal: blur(2px);
+$dark-grey: #52565E;
+$light-grey: #b1b1b1;
+$lighter-grey: #cbced1;
+$bg-neumorphism: #ecf0f3;
+$input-neumorphism: #EEEEEE;
+$boxshadow-neumorphism: #e0e0e0;
+$border-btn: rgba(207, 206, 206, 1);
+
+// FONT SIZES
+$bigger-title: 3.4rem;
+$big-title: 3rem;
+$normal-title: 2.5rem;
+$subtitle: 2rem;
+$bigger-text: 1.4rem;
+$big-text: 1.25rem;
+$medium-text: 1.2rem;
+$normal-text: 1rem;
+$alt-text: 0.9rem;
+$small-text: 0.8rem;
+$smaller-text: 0.7rem;
+
+$mobile-bigger-title: 2.3rem;
+$mobile-subtitle: 1.1rem;
+
+
+//FONT WEIGHTS
+$thin-weight: 300;
+$normal-weight: 400;
+$medium-weight: 500;
+$semibold-weight: 600;
+$bold-weight: 700;
+$superbold-weight: 800;
+$black-weight: 900;

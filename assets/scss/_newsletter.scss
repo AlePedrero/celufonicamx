@@ -1,0 +1,61 @@
+/*===NEWSLETTER===*/
+.newsletter-container {
+    background: linear-gradient(180deg, transparent, $primary-color, $secondary-color);
+    padding: 60px;
+    .newsletter-title {
+        color: $dark-color;
+        text-align: center;
+        font-size: $big-title;
+        margin: 10px 0;
+    }
+    .newsletter-txt {
+        color: $light-color;
+        font-size: $normal-text;
+        font-weight: $thin-weight;
+        margin: 10px 0;
+        text-align: center;
+    }
+    .newsletter-input {
+        width: 100%;
+        height: 70px;
+        background: $semitransparent-color;
+        border-radius: 50px;
+        position: relative;
+        input {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50px;
+            border: none;
+            outline: none;
+            background: $transparent-color;
+            padding: 0 20px;
+            font-size: $normal-text;
+            color: $dark-color;
+            &::placeholder {
+                color: $border-glass;
+                font-size: $small-text;
+            }
+        }
+    }
+    .btnNewsletter {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: none;
+        outline: none;
+        background: $dark-terciary-color;
+        color: $light-color;
+        &:hover {
+            background: $light-color;
+            color: $dark-terciary-color;
+            transition: .5s;
+        }
+    }
+}
