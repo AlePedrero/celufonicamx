@@ -1,0 +1,83 @@
+/*===CARRITO===*/
+.mi-carrito {
+    display: flex;
+    justify-content: center;
+}
+
+.carrito-container {
+    margin: 50px auto;
+    border-radius: 30px;
+}
+
+table {
+    width: 1300px;
+    max-width: 990px;
+    border-collapse: collapse;
+}
+
+.carrito-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.carrito-img {
+    width: 100px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+tr {
+    th {
+        text-align: left;
+        padding: 5px;
+        color: $light-color;
+        background-color: $primary-color;
+        font-weight: $bold-weight;
+        font-size: $normal-text;
+    }
+    td {
+        padding: 10px 5px;
+        input {
+            width: 40px;
+            height: 30px;
+            padding: 5px;
+            background-color: $input-neumorphism;
+            box-shadow: inset 5px 5px 12px $boxshadow-neumorphism,
+                        inset -5px -5px 12px $light-semitransparent;
+            border: none;
+        }
+        a {
+            color: $dark-terciary-color;
+            font-size: $smaller-text;
+            text-decoration: none;
+        }
+    }
+}
+
+.carrito-total {
+    display: flex;
+    justify-content: flex-end;
+    table {
+        border-top: 3px solid $secondary-color;
+        width: 100%;
+        max-width: 420px;
+        td {
+            &:last-child {
+                text-align: right;
+            }
+        }
+        th {
+            &:last-child {
+                text-align: right;
+            }
+        }
+        .btn-index {
+            font-size: $medium-text;
+        }
+    }
+}
+
+.shipping {
+    font-size: $small-text;
+}
+

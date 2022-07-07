@@ -1,0 +1,150 @@
+/*===MEDIA QUERIES===*/
+
+// XXL
+@media screen and (min-width: 993px) and (max-width:1600px) {
+.header-links {
+    li {
+    margin-right: 25px;
+    }
+}
+
+// XL
+}
+@media screen and (max-width: 1130px) {
+    .beneficios-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        .div {
+            width: 100%;
+            max-width: 800px;
+        }
+    }
+}
+
+// LG
+@media screen and (max-width: 992px){
+    .form-contacto {
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 80%;
+        color: #000000;
+    }
+
+    .aside-formulario,.aside-rrss {
+        width: 100%;
+    }
+
+    .aside-formulario {
+        border-top-right-radius: 16px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .aside-rrss {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 16px;
+    }
+
+    .seccion-acc {
+        flex-direction: column;
+    }
+
+    .acc-container {
+        width: 90%;
+    }
+
+    .acc-container-column {
+        width: 100%;
+    }
+
+    table {
+        width: 700px;
+        th {
+            font-size: 1.25rem;
+        }
+        td {
+            font-size: 1.1rem;
+        }
+        p {
+            font-size: 1.1rem;
+        }
+        small {
+            font-size: 1rem;
+        }
+        .btn-index {
+            font-size: 1.25rem;
+        }
+    }
+}
+
+// MD
+@media screen and (max-width: 768px) {
+    .beneficios-container {
+        .div {
+            width: 100%;
+            max-width: 700px;
+        }
+    }
+    
+    .promo-card {
+        width: 100%;
+        max-width: 700px;
+    }
+
+    .acc-container {
+        width: 85%;
+    }
+
+    table {
+        width: 550px;
+    }
+}
+
+// SM
+@media screen and (max-width: 576px) {
+    .welcome-box {
+        padding-left: 25px;
+    }
+    .beneficios-container {
+        h4 {
+            font-size: 30px;
+        }
+        .div {
+            width: 100%;
+            max-width: 350px;
+        }
+    }
+
+    .nosotros {
+        width: 90%;
+    }
+
+    .nosotros-logros {
+        h2 {
+            font-size: 2.3rem;
+            color: #231942;
+        }
+        h4 {
+            font-size: 0.7rem;
+            color: #574b90;
+        }
+    }
+
+    .promo-card {
+        width: 100%;
+        max-width: 350px;
+        .prod-btn {
+            font-size: $normal-text;
+            }
+    }
+
+    .acc-container {
+        width: 80%;
+    }
+
+    table {
+        width: 400px;
+    }
+}

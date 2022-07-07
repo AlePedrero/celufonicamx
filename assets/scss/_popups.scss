@@ -1,0 +1,26 @@
+/*===MODALES PRODUCTOS===*/
+.modal-content {
+    background: $bg-modal;
+    backdrop-filter: $blur-modal;
+}
+
+.wishlist-btn {
+    border: 1px solid $muted-color;
+    color: $muted-color;
+    &:hover {
+        background-color: $dark-color;
+        color: $light-semitransparent;
+        transition: 0.5s;
+    }
+}
+
+.cart-btn {
+    border: none;
+    background-color: $primary-color;
+    color: $light-semitransparent;
+    &:hover {
+        background-color: $secondary-color;
+        color: $light-semitransparent;
+        transition: 0.5s;
+    }
+}

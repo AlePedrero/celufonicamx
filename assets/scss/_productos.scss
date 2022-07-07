@@ -1,0 +1,71 @@
+/*===PRODUCTOS===*/
+.prod-img {
+    width: 120px;
+}
+
+.prod-contenido {
+    padding: 5px;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 1;
+    &:hover {
+        transform: translateY(-15px);
+    }
+    .prod-titulo {
+        margin: 5px;
+        color: $dark-semitransparent;
+        pointer-events: none;
+        font-size: $bigger-text;
+    }
+    .prod-txt {
+        font-size: $normal-text;
+        font-weight: $thin-weight;
+    }
+}
+
+.prod-btn {
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 10px;
+    background: $dark-terciary-color;
+    color: $light-color;
+    border-radius: 20px;
+    font-weight: $semibold-weight;
+    box-shadow: 5px 5px $boxshadow-glass;
+    &:hover {
+        background: $light-color;
+        color: $dark-terciary-color;
+        transition: 0.5s;
+    }
+}
+
+.promo-card {
+    border-radius: 15px;
+    background: $bg-glass;
+    box-shadow: 10px 10px $boxshadow-glass;
+    border: 1px 1px solid $border-glass;
+    backdrop-filter: $blur;
+    width: 100%;
+    .nombre-promo {
+        font-size: $bigger-text;
+    }
+    .promo-img {
+        width: 300px;
+        object-fit: contain;
+        overflow: hidden;
+        &:hover {
+            transition: 0.5s;
+            cursor: pointer;
+            transform: scale(1.2);
+        }
+    }
+    .prod-btn {
+        border-radius: 30px;
+        height: 60px;
+        width: 100%;
+        padding: 15px 0px;
+        font-size: $normal-text;
+    }
+}
+

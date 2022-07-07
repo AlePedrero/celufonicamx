@@ -18,7 +18,7 @@
         position: relative;
         box-shadow: 10px 10px $boxshadow-glass;
         border-radius: 15px;
-        background: linear-gradient(transparent, $body-gradient-first, $body-gradient-second, transparent);
+        background: linear-gradient(transparent, $body-gradient-second, transparent);
         border: 1px solid $border-glass;
         backdrop-filter: $blur;
         .nombre-beneficio {

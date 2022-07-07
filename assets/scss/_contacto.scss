@@ -1,0 +1,119 @@
+/*===CONTACTO===*/
+.form-contacto {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: row;
+    width: 1300px;
+    max-width: 1000px;
+    border-radius: 16px;
+    box-shadow: 13px 13px 20px $lighter-grey,
+                -13px -13px 20px $light-color;
+    backdrop-filter: $alt-blur;
+}
+
+.aside-formulario {
+    width: 90%;
+    padding: 20px;
+    background: $light-transparent;
+    box-shadow: 13px 13px 20px $lighter-grey,
+                -13px -13px 20px $light-color;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    .formulario {
+        margin-top: 10px;
+        width: 100%;
+    }
+    h1 {
+        font-size: $subtitle;
+        text-align: center;
+    }
+    small {
+        font-size: $small-text;
+    }
+}
+
+.form-input {
+    padding: 8px;
+    font-size: 0.8rem;
+    resize: vertical;
+    background: none; 
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    color: $dark-color;
+    box-shadow: inset 8px 8px 8px $lighter-grey,
+                inset -8px -8px 8px $light-color;
+}
+
+.servicio {
+    width: 250px;
+}
+
+.botones-form {
+    margin-top: 20px;
+    text-align: right;
+}
+
+#submit, #reset {
+    display: none;
+}
+
+#submit + label, #reset + label {
+    font-size: $medium-text;
+    padding: 10px;
+    cursor: pointer;
+    color: $dark-grey;
+    &:hover {
+        background-color: $primary-color;
+        color: $light-color;
+        border-radius: 25px;
+        transition: 0.5s;
+    }
+}
+
+.aside-rrss {
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding: 20px;
+    width: 35%;
+    background: linear-gradient($primary-color, $alt-accent-color, $accent-color, $secondary-color);
+}
+
+.rrss-contacto, .info-contacto {
+    li {
+        text-align: center;
+        padding-top: 10px;
+        list-style: none;
+        font-size: $alt-text;
+        margin-top: 90px;
+        margin-right: 25px;
+        color: $dark-secondary-color;
+        font-weight: $semibold-weight;
+    }
+}
+
+.rrss-contacto {
+    .contacto-icon {
+        transition: 0.3s;
+        &:hover {
+            margin-left: -10px;
+            color:  $light-color;
+        }
+    }
+}
+
+.info-contacto {
+    .contacto-icon {
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+}
+
+.contacto-icon {
+    font-size: $subtitle;
+    color: $dark-secondary-color;
+}
