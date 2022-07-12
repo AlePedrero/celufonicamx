@@ -1,0 +1,50 @@
+/*===PRODUCTS===*/
+.see-products {
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.see-products-title {
+    text-align: center;
+    margin: 30px auto 50px;
+    padding: 20px;
+    font-size: $big-title;
+    line-height: 60px;
+    color: $muted-color;
+}
+
+.see-products-card {
+    padding: 20px;
+    transition: 0.5s;
+    opacity: 1;
+    border-style: none;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    margin: 50px;
+    box-shadow: 10px 10px $boxshadow-glass;
+    border-radius: 15px;
+    background: $bg-glass;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid $border-glass;
+    border-left: 1px solid $border-glass;
+    backdrop-filter: $blur;
+    .see-products-subtitle {
+        color: $muted-color;
+        pointer-events: none;
+        font-size: $subtitle;
+        font-weight: $thin-weight;
+    }
+    .see-products-txt {
+        padding: 10px;
+        font-size: $normal-text;
+        font-weight: $thin-weight;
+    }
+    .see-products-img {
+        width: 100%;
+    }
+}

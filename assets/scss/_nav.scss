@@ -1,0 +1,43 @@
+/*===NAV===*/
+.navbar {
+    .header-img {
+        width: 200px;
+        margin: 10px;
+    }
+}
+.header-links {
+    li {
+        text-align: center;
+        list-style: none;
+        .active {
+            font-weight: $semibold-weight;
+        }
+    }
+    .header-link {
+        font-weight: $normal-weight;
+        font-style: bold;
+        padding: 6px;
+        &:hover {
+        background-color: $primary-color;
+        border-radius: 4px;
+        color: $light-color;
+        text-decoration: none;
+        transition: .5s;
+    }
+    }
+    #header-btnAcc {
+        background-color: $dark-color;
+        color: $light-color;
+        border-style: none;
+        border-radius: 20px;
+        padding: 6px;
+        font-weight: $normal-weight;
+        font-style: bold;
+        margin: 0px 5px;
+        &:hover {
+            background-color: $primary-color;
+            color: $dark-color;
+            transition: .5s;
+        }
+    }
+}

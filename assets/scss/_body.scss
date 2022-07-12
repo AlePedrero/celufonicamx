@@ -1,0 +1,9 @@
+/*========== BODY ==========*/
+body, input::placeholder, textarea, select {
+    font-family: $poppins;
+}
+
+body {
+    background: linear-gradient(transparent, $body-gradient-first, $body-gradient-second, transparent);
+    overflow-x: hidden;
+}

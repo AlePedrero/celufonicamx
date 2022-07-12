@@ -1,0 +1,93 @@
+/*===NOSOTROS===*/
+.sobre-nosotros {
+    margin: auto;
+    padding-top: 40px;
+}
+
+.nosotros-titulo {
+    text-align: center;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: $normal-title;
+    position: relative;
+    line-height: 60px;
+    color: $dark-color;
+}
+
+.nosotros-text {
+    font-size: $normal-text;
+    text-align: justify;
+}
+
+.nosotros-logros {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px 25px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "logro-uno logro-dos logro-tres";
+    h2 {
+        font-size: $bigger-title;
+        font-weight: bold;
+        color: $dark-secondary-color;
+    }
+    h4 {
+        font-size: $small-text;
+        font-weight: $medium-weight;
+        color: $dark-terciary-color;
+    }
+}
+
+.logro-uno { grid-area: logro-uno; }
+.logro-dos { grid-area: logro-dos; }
+.logro-tres { grid-area: logro-tres; }
+
+.widget {
+    opacity: 0.7;
+    text-shadow: 2px 0px $dark-color;
+    height: 300px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: $bigger-text;
+    a {
+        text-decoration: none;
+        color: $light-color;
+    }
+    &:hover {
+        opacity: 0.9;
+        cursor: pointer;
+    }
+}
+
+.widget-1 {
+    background-image: url("../img/proyectos.png");
+    background-size: cover;
+    
+}
+
+.widget-2 {
+    background-image: url("../img/distribuidores.png");
+    background-size: cover;
+}
+
+.nosotros-vacantes {
+    background: $dark-secondary-color;
+    color: $light-color;
+    text-align: center;
+    width: 100%;
+    h4 {
+        font-size: $bigger-text;
+    }
+    .nosotros-link {
+        text-decoration: none;
+        color: $light-color;
+        &:hover {
+            transition: 0.6s;
+            color: $light-grey;
+        }
+    }
+}

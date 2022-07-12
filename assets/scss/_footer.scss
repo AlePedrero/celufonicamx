@@ -1,0 +1,105 @@
+/*===FOOTER===*/
+.footer {
+    background-color: $secondary-color;
+    text-align: left;
+}
+
+.footer-box {
+    .img-app {
+        width: 100px;
+    }
+    ul {
+        list-style: none;
+        color: $light-color;
+    }
+    a {
+        text-decoration: none;
+        color: $light-color;
+        &:hover {
+            color: $dark-color;
+            transition: .5s;
+        }
+    }
+}
+.rrss, .rrss-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rrss-content {
+    position: relative;
+    align-items: center;
+    padding: 16px;
+    margin: 0 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.rrss-icon {
+    font-size: 2rem;
+    color: #FFFFFF;
+}
+
+.rrss-tooltip {
+    opacity: 0;
+    position: absolute;
+    padding: 8px 16px;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-size: 1rem;
+    white-space: nowrap;
+    font-weight: 600;
+    border-radius: 8px;
+    pointer-events: none;
+    &::after {
+        content: '';
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        background-color: #000000;
+        border-radius: 3px;
+    }
+}
+
+.rrss-content, .rrss-tooltip, .rrss-icon {
+    transition: .3s;
+}
+
+.rrss-content:hover .rrss-icon {
+    color: #000000;
+}
+
+.rrss-tooltip-txt {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    &::after {
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+        top: 1px;
+    }
+}
+
+.rrss-content:hover .rrss-tooltip-txt {
+    opacity: 1;
+    bottom: -16px;
+}
+
+.footer-credit {
+    background-color: $dark-color;
+    padding: 15px 10px;
+    text-align: center;
+    color: $light-color;
+    small {
+        font-size: $small-text;
+    }
+    a {
+        color: $light-color;
+        text-decoration: none;
+        &:hover {
+            color: $primary-color;
+            transition: .8s;
+        }
+    }
+}

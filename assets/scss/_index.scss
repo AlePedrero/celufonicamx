@@ -1,0 +1,32 @@
+/*===INDEX===*/
+.welcome-box {
+    padding-left: 50px;
+    padding-right: 25px;
+    .welcome-title {
+        font-size: $bigger-title;
+    }
+    .welcome-text {
+        font-size: $normal-text;
+    }
+    .welcome-img {
+        max-width: 700px;
+    }
+}
+
+.btn-index {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background: $primary-color;
+    color: $light-color;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: $semibold-weight;
+    border: 1px solid $border-btn;
+    box-shadow: 5px 5px $boxshadow-glass;
+    &:hover {
+        background: $light-color;
+        color: $terciary-color;
+        transition: .5s;
+    }
+}
