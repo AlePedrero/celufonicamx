@@ -45,13 +45,11 @@
 .logro-tres { grid-area: logro-tres; }
 
 .widget {
+    @include flex-center;
     opacity: 0.7;
     text-shadow: 2px 0px $dark-color;
     height: 300px;
     text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-size: $bigger-text;
     a {
         text-decoration: none;

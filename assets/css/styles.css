@@ -92,11 +92,11 @@ body {
 
 /*===PRODUCTS===*/
 .see-products {
-  padding-left: 15px;
-  padding-right: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .see-products-title {
@@ -436,13 +436,13 @@ body {
 }
 
 .widget {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   opacity: 0.7;
   text-shadow: 2px 0px #000000;
   height: 300px;
   text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-size: 1.4rem;
 }
 .widget a {
@@ -693,12 +693,12 @@ body {
 
 /*===MI CUENTA===*/
 .seccion-acc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 20px 0;
   width: 100%;
   overflow-x: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: #555555;
 }
 
@@ -780,6 +780,10 @@ body {
 .carrito-container {
   margin: 50px auto;
   border-radius: 30px;
+}
+
+.cart-title {
+  font-size: 2.5rem;
 }
 
 table {
@@ -921,39 +925,38 @@ tr td a {
   }
 }
 @media screen and (max-width: 992px) {
+  .header-links li {
+    margin-bottom: 5px;
+  }
   .form-contacto {
     flex-direction: column;
     flex-wrap: wrap;
     width: 80%;
     color: #000000;
   }
-
   .aside-formulario, .aside-rrss {
     width: 100%;
   }
-
   .aside-formulario {
     border-top-right-radius: 16px;
     border-bottom-left-radius: 0px;
   }
-
   .aside-rrss {
     border-top-right-radius: 0px;
     border-bottom-left-radius: 16px;
   }
-
+  .rrss-contacto li, .info-contacto li {
+    margin-top: 10px;
+  }
   .seccion-acc {
     flex-direction: column;
   }
-
   .acc-container {
     width: 90%;
   }
-
   .acc-container-column {
     width: 100%;
   }
-
   table {
     width: 700px;
   }
@@ -978,16 +981,13 @@ tr td a {
     width: 100%;
     max-width: 700px;
   }
-
   .promo-card {
     width: 100%;
     max-width: 700px;
   }
-
   .acc-container {
     width: 85%;
   }
-
   table {
     width: 550px;
   }
@@ -996,7 +996,6 @@ tr td a {
   .welcome-box {
     padding-left: 25px;
   }
-
   .beneficios-container h4 {
     font-size: 30px;
   }
@@ -1004,11 +1003,9 @@ tr td a {
     width: 100%;
     max-width: 350px;
   }
-
   .nosotros {
     width: 90%;
   }
-
   .nosotros-logros h2 {
     font-size: 2.3rem;
     color: #231942;
@@ -1017,7 +1014,6 @@ tr td a {
     font-size: 0.7rem;
     color: #574b90;
   }
-
   .promo-card {
     width: 100%;
     max-width: 350px;
@@ -1025,11 +1021,9 @@ tr td a {
   .promo-card .prod-btn {
     font-size: 1rem;
   }
-
   .acc-container {
     width: 80%;
   }
-
   table {
     width: 400px;
   }

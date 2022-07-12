@@ -1,11 +1,9 @@
 /*===MI CUENTA===*/
 .seccion-acc {
+    @include flex-center;
     padding: 20px 0;
     width: 100%;
     overflow-x: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: $muted-color;
 }
 

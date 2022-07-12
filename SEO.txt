@@ -1,0 +1,32 @@
+En el archivo index.html implementé SEO en lo siguiente:
+Palabras clave: mediante la etiqueta meta name="keywords", agregué las palabras clave que acompañarán a todas las páginas de mi sitio: 
+"TELEFONÍA, INTERNET, SIM, MÓDEM, ROUTER, DATOS MÓVILES, SERVICIOS EMPRESARIALES, PORTÁTIL, INTERNET HOGAR, INTERNET FIJO"
+Descripción: en la etiqueta meta name="description", añadí el siguiente párrafo que explica en pocas palabras el contenido de esta sección del sitio: 
+"Celufónica es una startup de telecomunicaciones que ofrece los servicios de Telefonía Móvil, Internet Portátil e Internet Fijo, con los precios más bajos del mercado, tanto para usuarios finales, como para empresass"
+Encabezado: Cambié el texto del tag H1 a "¡Bienvenido a Celufónica!"
+
+En el archivo nosotros.html implementé SEO en lo siguiente:
+Descripción:  en la etiqueta meta name="description", añadí el siguiente párrafo que explica en pocas palabras el contenido de esta sección del sitio: 
+"Nosotros somos Celufónica, una start-up mexicana enfocada a servicios de operador de telefonía y proveedor de internet."
+Encabezado: Cambié el texto del tag H1 a "Acerca de Celufónica"
+
+En el archivo productos.html implementé SEO en lo siguiente:
+Descripción:  en la etiqueta meta name="description", añadí el siguiente párrafo que explica en pocas palabras el contenido de esta sección del sitio: 
+"En Celufónica, contamos con diferentes productos para satisfacer las necesidades de los siguientes servicios, de Telefonía Móvil, Internet Fijo e Internet Portátil."
+
+En el archivo contacto.html implementé SEO en lo siguiente:
+Descripción:  en la etiqueta meta name="description", añadí el siguiente párrafo que explica en pocas palabras el contenido de esta sección del sitio: 
+"Si quieres conocer más acerca de Celufónica, o te interesa cotizar nuestros servicios empresariales, por favor déjanos tus datos para contactarte y atenderte de una manera personalizada."
+
+En el archivo micuenta.html implementé SEO en lo siguiente:
+Descripción: en la etiqueta meta name="description", añadí el siguiente párrafo que explica en pocas palabras el contenido de esta sección del sitio: 
+"Si aún no te has registrado en Celufónica, crea tu cuenta para realizar tus recargas, o inicia sesión si ya la has creado anteriormente. En Recarga Express, si quieres regalarle una recarga a un amigo, coloca su número a 10 dígitos para realizarla."
+
+En el archivo carrito.html implementé SEO en lo siguiente:
+Descripción: en la etiqueta meta name="description", añadí el siguiente párrafo que explica en pocas palabras el contenido de esta sección del sitio: 
+"Administra tus artículos de Celufónica añadidos en tu carrito y completa tu proceso de compra."
+Encabezado: Agregué un tag H1 con el texto "Tus artículos"
+
+En el archivo puntosdeventa.html implementé SEO en lo siguiente:
+Descripción: en la etiqueta meta name="description", añadí el siguiente párrafo que explica en pocas palabras el contenido de esta sección del sitio: 
+"Busca y descubre nuestros diferentes puntos de venta físicos autorizados por Celufónica, para adquirir cualquiera de nuestros productos en casi cualquier parte del país."

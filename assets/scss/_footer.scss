@@ -22,9 +22,7 @@
     }
 }
 .rrss, .rrss-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
 }
 
 .rrss-content {

@@ -26,6 +26,12 @@
 
 // LG
 @media screen and (max-width: 992px){
+    .header-links {
+        li {
+        margin-bottom: 5px;
+        }
+    }
+
     .form-contacto {
         flex-direction: column;
         flex-wrap: wrap;
@@ -45,6 +51,12 @@
     .aside-rrss {
         border-top-right-radius: 0px;
         border-bottom-left-radius: 16px;
+    }
+
+    .rrss-contacto, .info-contacto {
+        li {
+            margin-top: 10px;
+        }
     }
 
     .seccion-acc {
