@@ -1,21 +1,21 @@
 /*===BENEFICIOS===*/
 .beneficios-container {  
-    display: grid;
+    display: map-get($basicos , grilla );
     grid-template-columns: 1.5fr 1.5fr 1.5fr 1.5fr;
     grid-template-rows: 0.5fr 1fr 1fr;
     gap: 20px 20px;
-    grid-auto-flow: row;
+    grid-auto-flow: map-get($basicos , fila );
     grid-template-areas:
     "beneficios-titulo beneficios-titulo beneficios-titulo beneficios-titulo"
     "beneficio-uno beneficio-dos beneficio-tres beneficio-cuatro"
     "beneficio-cinco beneficio-seis beneficio-siete beneficio-ocho";
-    margin: 10px;
+    margin: map-get($basicos , margen-padding );
     padding: 50px;
     .div {
         width: 100%;
         max-width: 300px;
-        text-align: center;
-        position: relative;
+        text-align: map-get($basicos , centro );
+        position: map-get($basicos , posicion );
         box-shadow: 10px 10px $boxshadow-glass;
         border-radius: 15px;
         background: linear-gradient(transparent, $body-gradient-second, transparent);
@@ -23,16 +23,16 @@
         backdrop-filter: $blur;
         .nombre-beneficio {
             font-size: $bigger-text;
-            padding: 10px;
-            margin:10px;
+            padding: map-get($basicos , margen-padding );
+            margin: map-get($basicos , margen-padding );
         }
         .beneficio-icon {
             max-width: 85px;
             margin: 5px;
         }
         .beneficio-txt {
-            margin: 10px;
-            padding: 10px;
+            margin: map-get($basicos , margen-padding );
+            padding: map-get($basicos , margen-padding );
             font-size: $normal-text;
             font-weight: $normal-weight;
         }

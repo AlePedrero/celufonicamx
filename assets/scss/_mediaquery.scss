@@ -12,11 +12,9 @@
 }
 @media screen and (max-width: 1130px) {
     .beneficios-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
+        @include flex-center;
+        flex-direction: map-get($basicos , columna );
+        align-content: map-get($basicos , centro );
         .div {
             width: 100%;
             max-width: 800px;
@@ -33,10 +31,10 @@
     }
 
     .form-contacto {
-        flex-direction: column;
-        flex-wrap: wrap;
+        flex-direction: map-get($basicos , columna );
+        flex-wrap: map-get($basicos , wrap );
         width: 80%;
-        color: #000000;
+        color: $dark-color;
     }
 
     .aside-formulario,.aside-rrss {
@@ -60,7 +58,7 @@
     }
 
     .seccion-acc {
-        flex-direction: column;
+        flex-direction: map-get($basicos , columna );
     }
 
     .acc-container {
@@ -74,19 +72,19 @@
     table {
         width: 700px;
         th {
-            font-size: 1.25rem;
+            font-size: $big-text;
         }
         td {
-            font-size: 1.1rem;
+            font-size: $mobile-subtitle;
         }
         p {
-            font-size: 1.1rem;
+            font-size: $mobile-subtitle;
         }
         small {
-            font-size: 1rem;
+            font-size: $normal-text;
         }
         .btn-index {
-            font-size: 1.25rem;
+            font-size: $big-text;
         }
     }
 }
@@ -121,7 +119,7 @@
     }
     .beneficios-container {
         h4 {
-            font-size: 30px;
+            font-size: $subtitle;
         }
         .div {
             width: 100%;
@@ -135,12 +133,12 @@
 
     .nosotros-logros {
         h2 {
-            font-size: 2.3rem;
-            color: #231942;
+            font-size: $mobile-bigger-title;
+            color: $dark-secondary-color;
         }
         h4 {
-            font-size: 0.7rem;
-            color: #574b90;
+            font-size: $smaller-text;
+            color: $dark-terciary-color;
         }
     }
 

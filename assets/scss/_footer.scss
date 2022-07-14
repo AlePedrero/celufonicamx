@@ -1,7 +1,7 @@
 /*===FOOTER===*/
 .footer {
     background-color: $secondary-color;
-    text-align: left;
+    text-align: map-get($basicos , izquierda );
 }
 
 .footer-box {
@@ -9,15 +9,15 @@
         width: 100px;
     }
     ul {
-        list-style: none;
+        list-style: map-get($basicos , no );
         color: $light-color;
     }
     a {
-        text-decoration: none;
+        text-decoration: map-get($basicos , textolineado );
         color: $light-color;
         &:hover {
             color: $dark-color;
-            transition: .5s;
+            transition: map-get($btns , transicion );
         }
     }
 }
@@ -26,8 +26,8 @@
 }
 
 .rrss-content {
-    position: relative;
-    align-items: center;
+    position: map-get($basicos , posicion );
+    align-items: map-get($basicos , centro );
     padding: 16px;
     margin: 0 16px;
     border-radius: 10px;
@@ -35,27 +35,27 @@
 }
 
 .rrss-icon {
-    font-size: 2rem;
-    color: #FFFFFF;
+    font-size: $subtitle;
+    color: $light-color;
 }
 
 .rrss-tooltip {
     opacity: 0;
     position: absolute;
     padding: 8px 16px;
-    background-color: #000000;
-    color: #FFFFFF;
-    font-size: 1rem;
+    background-color: $dark-color;
+    color: $light-color;
+    font-size: $normal-text;
     white-space: nowrap;
-    font-weight: 600;
+    font-weight: $semibold-weight;
     border-radius: 8px;
-    pointer-events: none;
+    pointer-events: map-get($basicos , no );
     &::after {
         content: '';
         position: absolute;
         width: 12px;
         height: 12px;
-        background-color: #000000;
+        background-color: $dark-color;
         border-radius: 3px;
     }
 }
@@ -65,7 +65,7 @@
 }
 
 .rrss-content:hover .rrss-icon {
-    color: #000000;
+    color: $dark-color;
 }
 
 .rrss-tooltip-txt {
@@ -87,14 +87,14 @@
 .footer-credit {
     background-color: $dark-color;
     padding: 15px 10px;
-    text-align: center;
+    text-align: map-get($basicos , centro );
     color: $light-color;
     small {
         font-size: $small-text;
     }
     a {
         color: $light-color;
-        text-decoration: none;
+        text-decoration: map-get($basicos , textolineado );
         &:hover {
             color: $primary-color;
             transition: .8s;

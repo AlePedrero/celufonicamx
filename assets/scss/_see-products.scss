@@ -6,7 +6,7 @@
 }
 
 .see-products-title {
-    text-align: center;
+    text-align: map-get($basicos , centro);
     margin: 30px auto 50px;
     padding: 20px;
     font-size: $big-title;
@@ -16,29 +16,29 @@
 
 .see-products-card {
     padding: 20px;
-    transition: 0.5s;
+    transition: map-get($btns , transicion);
     opacity: 1;
-    border-style: none;
-    text-align: center;
+    border-style: map-get($basicos , no);
+    text-align: map-get($basicos , centro);
     width: 100%;
     max-width: 300px;
     margin: 50px;
     box-shadow: 10px 10px $boxshadow-glass;
     border-radius: 15px;
     background: $bg-glass;
-    justify-content: center;
-    align-items: center;
+    justify-content: map-get($basicos , centro);
+    align-items: map-get($basicos , centro);
     border-top: 1px solid $border-glass;
     border-left: 1px solid $border-glass;
     backdrop-filter: $blur;
     .see-products-subtitle {
         color: $muted-color;
-        pointer-events: none;
+        pointer-events: map-get($basicos , no);
         font-size: $subtitle;
         font-weight: $thin-weight;
     }
     .see-products-txt {
-        padding: 10px;
+        padding: map-get($basicos , margen-padding );
         font-size: $normal-text;
         font-weight: $thin-weight;
     }

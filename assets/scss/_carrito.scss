@@ -1,7 +1,7 @@
 /*===CARRITO===*/
 .mi-carrito {
-    display: flex;
-    justify-content: center;
+    display: map-get($basicos , flexible );
+    justify-content: map-get($basicos , centro );
 }
 
 .carrito-container {
@@ -20,19 +20,19 @@ table {
 }
 
 .carrito-info {
-    display: flex;
-    flex-wrap: wrap;
+    display: map-get($basicos , flexible );
+    flex-wrap: map-get($basicos , wrap );
 }
 
 .carrito-img {
     width: 100px;
     height: 60px;
-    margin-right: 10px;
+    margin-right: map-get($basicos , margen-padding );
 }
 
 tr {
     th {
-        text-align: left;
+        text-align: map-get($basicos , izquierda );
         padding: 5px;
         color: $light-color;
         background-color: $primary-color;
@@ -48,31 +48,31 @@ tr {
             background-color: $input-neumorphism;
             box-shadow: inset 5px 5px 12px $boxshadow-neumorphism,
                         inset -5px -5px 12px $light-semitransparent;
-            border: none;
+            border: map-get($basicos , no );
         }
         a {
             color: $dark-terciary-color;
             font-size: $smaller-text;
-            text-decoration: none;
+            text-decoration: map-get($basicos , textolineado );
         }
     }
 }
 
 .carrito-total {
-    display: flex;
-    justify-content: flex-end;
+    display: map-get($basicos , flexible );
+    justify-content: map-get($basicos , final );
     table {
         border-top: 3px solid $secondary-color;
         width: 100%;
         max-width: 420px;
         td {
             &:last-child {
-                text-align: right;
+                text-align: map-get($basicos , derecha );
             }
         }
         th {
             &:last-child {
-                text-align: right;
+                text-align: map-get($basicos , derecha );
             }
         }
         .btn-index {

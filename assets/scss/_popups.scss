@@ -10,17 +10,17 @@
     &:hover {
         background-color: $dark-color;
         color: $light-semitransparent;
-        transition: 0.5s;
+        transition: map-get($btns , transicion );
     }
 }
 
 .cart-btn {
-    border: none;
+    border: map-get($basicos , no );
     background-color: $primary-color;
     color: $light-semitransparent;
     &:hover {
         background-color: $secondary-color;
         color: $light-semitransparent;
-        transition: 0.5s;
+        transition: map-get($btns , transicion );
     }
 }

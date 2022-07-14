@@ -1,0 +1,22 @@
+$btns: (
+    inlineblock: inline-block,
+    relleno: 10px 20px,
+    radio: 20px,
+    transicion: .5s
+);
+
+$basicos: (
+    margen-padding: 10px,
+    textolineado: none,
+    centro: center,
+    derecha: right,
+    izquierda: left,
+    posicion: relative,
+    flexible: flex,
+    final: flex-end,
+    fila: row,
+    columna: column,
+    grilla: grid,
+    wrap: wrap,
+    no: none
+);

@@ -1,12 +1,18 @@
 /*===PRODUCTOS===*/
+.products-card {
+    @extend .see-products-card;
+    border-radius: 25px;
+    border: 1px solid $border-glass;
+}
+
 .prod-img {
     width: 120px;
 }
 
 .prod-contenido {
     padding: 5px;
-    text-align: center;
-    transition: 0.5s;
+    text-align: map-get($basicos , centro );
+    transition: map-get($btns , transicion );
     opacity: 1;
     &:hover {
         transform: translateY(-15px);
@@ -14,7 +20,7 @@
     .prod-titulo {
         margin: 5px;
         color: $dark-semitransparent;
-        pointer-events: none;
+        pointer-events: map-get($basicos , no );
         font-size: $bigger-text;
     }
     .prod-txt {
@@ -24,19 +30,19 @@
 }
 
 .prod-btn {
-    position: relative;
-    display: inline-block;
-    padding: 8px 20px;
-    margin-top: 10px;
+    position: map-get($btns , posicion );
+    display: map-get($btns , inlineblock );
+    padding: map-get($btns , relleno );
+    margin-top: map-get($basicos , margen-padding );
     background: $dark-terciary-color;
     color: $light-color;
-    border-radius: 20px;
+    border-radius: map-get($btns , radio );
     font-weight: $semibold-weight;
     box-shadow: 5px 5px $boxshadow-glass;
     &:hover {
         background: $light-color;
         color: $dark-terciary-color;
-        transition: 0.5s;
+        transition: map-get($btns , transicion );
     }
 }
 
@@ -55,7 +61,7 @@
         object-fit: contain;
         overflow: hidden;
         &:hover {
-            transition: 0.5s;
+            transition: map-get($btns , transicion );
             cursor: pointer;
             transform: scale(1.2);
         }

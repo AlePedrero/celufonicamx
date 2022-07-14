@@ -14,19 +14,19 @@
 }
 
 .btn-index {
-    position: relative;
-    display: inline-block;
-    padding: 10px 20px;
+    position: map-get($basicos , posicion );
+    display: map-get($btns , inlineblock );
+    padding: map-get($btns , relleno );
     background: $primary-color;
     color: $light-color;
-    border-radius: 20px;
-    text-decoration: none;
+    border-radius: map-get($btns , radio );
+    text-decoration: map-get($basicos , textolineado );
     font-weight: $semibold-weight;
     border: 1px solid $border-btn;
     box-shadow: 5px 5px $boxshadow-glass;
     &:hover {
         background: $light-color;
         color: $terciary-color;
-        transition: .5s;
+        transition: map-get($btns , transicion );
     }
 }
