@@ -53,7 +53,7 @@
 
     .rrss-contacto, .info-contacto {
         li {
-            margin-top: 10px;
+            margin-top: map-get($basicos , margen-padding );
         }
     }
 
@@ -91,6 +91,10 @@
 
 // MD
 @media screen and (max-width: 768px) {
+    .welcome-title {
+        text-align: map-get($basicos , centro );
+    }
+
     .beneficios-container {
         .div {
             width: 100%;
@@ -117,6 +121,7 @@
     .welcome-box {
         padding-left: 25px;
     }
+
     .beneficios-container {
         h4 {
             font-size: $subtitle;
@@ -144,7 +149,7 @@
 
     .promo-card {
         width: 100%;
-        max-width: 350px;
+        max-width: 550px;
         .prod-btn {
             font-size: $normal-text;
             }
@@ -156,5 +161,71 @@
 
     table {
         width: 400px;
+    }
+}
+
+// XSM
+@media screen and (min-width: 319px) and (max-width:419px) {
+    .welcome-box {
+        padding: map-get($basicos , margen-padding );
+        .welcome-title {
+            font-size: $big-title;
+        }
+        .welcome-text {
+            text-align: justify;
+        }
+    }
+    .see-products-title {
+        margin-bottom: 0;
+    }
+    .newsletter-container {
+        padding: map-get($basicos , margen-padding );
+        .newsletter-title {
+            font-size: $normal-title;
+            text-align: map-get($basicos , centro );
+        }
+    }
+    .nosotros-logros {
+        h2 {
+            font-size: $subtitle;
+        }
+        h4 {
+            font-size: $mobile-small-text;
+        }
+    }
+
+    .productos {
+        padding: 15px;
+        h1 {
+            font-size: $normal-title;
+        }
+    }
+
+    .servicio {
+        width: 100%;
+    }
+    .seccion-acc {
+        padding-right: 35px;
+    }
+    .mi-carrito {
+        padding: 25px;
+    }
+    
+    table {
+        width: 95%;
+        tr {
+            th {
+                font-size: $normal-text;
+            }
+            p, td, small {
+                font-size: $alt-text;
+            }
+        }
+    }
+    .selector-pdv {
+        text-align: map-get($basicos , centro );
+        h1 {
+            font-size: $subtitle;
+        }
     }
 }

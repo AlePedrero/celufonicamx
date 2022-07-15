@@ -1,5 +1,6 @@
 /*===NOSOTROS===*/
 .sobre-nosotros {
+    @include flex-center;
     margin: auto;
     padding-top: 40px;
 }

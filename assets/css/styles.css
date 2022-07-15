@@ -358,6 +358,9 @@ body {
   transform: translate(-50%, -50%) rotate(45deg);
   top: 1px;
 }
+.rrss-tooltip-txt b {
+  font-weight: 500;
+}
 
 .rrss-content:hover .rrss-tooltip-txt {
   opacity: 1;
@@ -384,6 +387,9 @@ body {
 
 /*===NOSOTROS===*/
 .sobre-nosotros {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: auto;
   padding-top: 40px;
 }
@@ -981,6 +987,9 @@ tr td a {
   }
 }
 @media screen and (max-width: 768px) {
+  .welcome-title {
+    text-align: center;
+  }
   .beneficios-container .div {
     width: 100%;
     max-width: 700px;
@@ -1020,7 +1029,7 @@ tr td a {
   }
   .promo-card {
     width: 100%;
-    max-width: 350px;
+    max-width: 550px;
   }
   .promo-card .prod-btn {
     font-size: 1rem;
@@ -1030,5 +1039,62 @@ tr td a {
   }
   table {
     width: 400px;
+  }
+}
+@media screen and (min-width: 319px) and (max-width: 419px) {
+  .welcome-box {
+    padding: 10px;
+  }
+  .welcome-box .welcome-title {
+    font-size: 3rem;
+  }
+  .welcome-box .welcome-text {
+    text-align: justify;
+  }
+  .see-products-title {
+    margin-bottom: 0;
+  }
+  .newsletter-container {
+    padding: 10px;
+  }
+  .newsletter-container .newsletter-title {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .nosotros-logros h2 {
+    font-size: 2rem;
+  }
+  .nosotros-logros h4 {
+    font-size: 0.6rem;
+  }
+  .productos {
+    padding: 15px;
+  }
+  .productos h1 {
+    font-size: 2.5rem;
+  }
+  .servicio {
+    width: 100%;
+  }
+  .seccion-acc {
+    padding-right: 35px;
+  }
+  .mi-carrito {
+    padding: 25px;
+  }
+  table {
+    width: 95%;
+  }
+  table tr th {
+    font-size: 1rem;
+  }
+  table tr p, table tr td, table tr small {
+    font-size: 0.9rem;
+  }
+  .selector-pdv {
+    text-align: center;
+  }
+  .selector-pdv h1 {
+    font-size: 2rem;
   }
 }/*# sourceMappingURL=styles.css.map */
