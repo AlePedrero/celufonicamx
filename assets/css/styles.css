@@ -13,7 +13,6 @@ body, input::placeholder, textarea, select {
 
 body {
   background: linear-gradient(transparent, rgba(131, 33, 243, 0.251), rgba(115, 30, 233, 0.157), transparent);
-  overflow-x: hidden;
 }
 
 /*===NAV===*/

@@ -5,5 +5,4 @@ body, input::placeholder, textarea, select {
 
 body {
     background: linear-gradient(transparent, $body-gradient-first, $body-gradient-second, transparent);
-    overflow-x: hidden;
 }
